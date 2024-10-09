@@ -76,16 +76,16 @@ TEST(AVLTreeTests, test4) {
   ASSERT_TRUE(tree.height() == 1);
 
   tree.insert(30);
-  ASSERT_TRUE(tree.height() == 2);
+  ASSERT_TRUE(tree.height() == 1);
 
   tree.insert(40);
   ASSERT_TRUE(tree.height() == 2);
 
   tree.insert(50);
-  ASSERT_TRUE(tree.height() == 3);
+  ASSERT_TRUE(tree.height() == 2);
 
   tree.insert(25);
-  ASSERT_TRUE(tree.height() == 3);
+  ASSERT_TRUE(tree.height() == 2);
 
   std::vector<int> detected = tree.inorderTraversal();
   std::vector<int> expected{10, 20, 25, 30, 40, 50};
